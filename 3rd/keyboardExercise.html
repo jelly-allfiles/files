@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Move the Box Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+    #gameArea {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    #box {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      transition: background-color 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="padding: 10px;">Use arrow keys to move the box. Press Shift/Ctrl/Alt to change the background color.</h2>
+  <div id="gameArea">
+    <div id="box"></div>
+  </div>
+
+  <script>
+    const box = document.getElementById('box');
+    let topPos = 100;
+    let leftPos = 100;
+    const step = 10;
+
+    document.addEventListener('keydown', function(e) {
+      // Movement
+      switch(e.key) {
+        case 'ArrowUp':
+          topPos = Math.max(0, topPos - step);
+          break;
+        case 'ArrowDown':
+          topPos = Math.min(window.innerHeight - 60, topPos + step);
+          break;
+        case 'ArrowLeft':
+          leftPos = Math.max(0, leftPos - step);
+          break;
+        case 'ArrowRight':
+          leftPos = Math.min(window.innerWidth - 60, leftPos + step);
+          break;
+      }
+
+      // Update position
+      box.style.top = `${topPos}px`;
+      box.style.left = `${leftPos}px`;
+
+      // Modifier keys change background color
+      if (e.shiftKey) {
+        box.style.backgroundColor = 'blue';
+      } else if (e.ctrlKey) {
+        box.style.backgroundColor = 'green';
+      } else if (e.altKey) {
+        box.style.backgroundColor = 'orange';
+      } else {
+        box.style.backgroundColor = 'red';
+      }
+    });
+  </script>
+</body>
+</html>

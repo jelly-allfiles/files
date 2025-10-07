@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mouse Brush Painter</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #fff;
+      overflow: hidden;
+    }
+    .dot {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0.8;
+      transition: opacity 1s;
+      mix-blend-mode: multiply;
+      filter: blur(1px);
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  document.addEventListener('mousemove', function(e) {
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+
+    // Set color based on modifier keys
+    let color = '#333';
+    if (e.shiftKey && e.ctrlKey) {
+      color = 'red';
+    } else if (e.ctrlKey && e.altKey) {
+      color = 'blue';
+    } else if (e.shiftKey) {
+      color = 'green';
+    } else if (e.ctrlKey) {
+      color = 'yellow';
+    } else if (e.altKey) {
+      color = 'purple';
+    } else if (e.metaKey) {
+      color = '#333'; // For Mac Command key
+    }
+
+    // Set size based on button held (brush size)
+    let size = Math.random() * 20 + 10; 
+    const blur = Math.random() * 2 + 2;
+
+    if (e.buttons === 1) size = 16; // Left click
+    else if (e.buttons === 2) size = 24; // Right click
+    else if (e.buttons === 4) size = 30; // Middle click
+
+    // Apply styles
+    dot.style.backgroundColor = color;
+    dot.style.width = `${size}px`;
+    dot.style.height = `${size * (Math.random() * 0.5 + 0.75)}px`;
+    dot.style.filter = `blur(${blur}px)`;
+    dot.style.left = `${e.clientX - size / 2}px`;
+    dot.style.top = `${e.clientY - size / 2}px`;
+
+    document.body.appendChild(dot);
+
+    // Fade out and remove
+    setTimeout(() => {
+      dot.style.opacity = '0';
+      setTimeout(() => dot.remove(), 1000);
+    }, 200);
+  });
+
+  // Prevent right-click context menu
+  document.addEventListener('contextmenu', e => e.preventDefault());
+</script>
+
+</body>
+</html>
