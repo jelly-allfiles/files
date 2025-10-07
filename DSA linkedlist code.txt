@@ -1,0 +1,134 @@
+public class LinkedList {
+    Node head;
+    Node tail;
+    int count = 0;
+
+    // Node class definition
+    private static class Node {
+        int item;
+        Node link;
+
+        public Node(int item) {
+            this.item = item;
+            this.link = null;
+        }
+
+        public Node(int item, Node link) {
+            this.item = item;
+            this.link = link;
+        }
+
+        public int getItem() {
+            return item;
+        }
+
+        public Node getLink() {
+            return link;
+        }
+
+        public void setLink(Node link) {
+            this.link = link;
+        }
+    }
+
+    public void addLast(int item) {
+        if (isEmpty()) {
+            tail = head = new Node(item);
+        } else {
+            Node temp = new Node(item);
+            tail.setLink(temp);
+            tail = temp;
+        }
+        count++;
+    }
+
+    public void addFirst(int item) {
+        if (isEmpty()) {
+            tail = head = new Node(item);
+        } else {
+            Node temp = new Node(item, head);
+            head = temp;
+        }
+        count++;
+    }
+
+    public boolean isEmpty() {
+        return count == 0;
+    }
+
+    public int getFirstElement() {
+        if (isEmpty()) {
+            System.out.println("List is empty!");
+            return -1; // or throw an exception
+        }
+        return head.getItem();
+    }
+
+    public int getLastElement() {
+        if (isEmpty()) {
+            System.out.println("List is empty!");
+            return -1; // or throw an exception
+        }
+        return tail.getItem();
+    }
+
+    public void removeFirst() {
+        if (!isEmpty()) {
+            if (count == 1) {
+                head = tail = null;
+            } else {
+                Node temp = head;
+                head = head.getLink();
+                temp.setLink(null);
+            }
+            count--;
+        } else {
+            System.out.println("List is empty! Cannot remove first element.");
+        }
+    }
+
+    public void removeLast() {
+        if (isEmpty()) {
+            System.out.println("List is empty! Cannot remove last element.");
+            return;
+        }
+        if (count == 1) {
+            head = tail = null;
+        } else {
+            Node prev = head;
+            Node p = head.getLink();
+            while (p.getLink() != null) {
+                prev = p;
+                p = p.getLink();
+            }
+            prev.setLink(null);
+            tail = prev; // Update tail to the new last element
+        }
+        count--;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{");
+        for (Node p = head; p != null; p = p.getLink()) {
+            sb.append(p.getItem());
+            if (p.getLink() != null) {
+                sb.append(", ");
+            }
+        }
+        sb.append("}");
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList();
+        list.addLast(6);
+        list.addLast(5);
+        list.addLast(7);
+        list.addLast(8);
+        list.addLast(10);
+        System.out.println("List contains: " + list);
+        list.removeLast();
+        System.out.print("List contains after removeLast(): " + list);
+    }
+}
