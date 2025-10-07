@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .result {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li.correct {
+            color: green;
+        }
+        li.incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typing Test</h1>
+    <p>Type the word: <strong id="targetWord">hello</strong></p>
+    <input type="text" id="typingInput" placeholder="Type here..." style="width: 300px;">
+    <button id="checkButton">Submit</button>
+
+    <div id="feedback" class="result"></div>
+
+    <h3>Word History:</h3>
+    <ul id="wordHistory"></ul>
+
+    <script>
+        const wordList = ["hello", "world", "javascript", "typing", "test"];
+        let currentIndex = 0;
+
+                
+        const checkButton = document.getElementById("checkButton");
+        const feedback = document.getElementById("feedback");
+        const targetWordDisplay = document.getElementById("targetWord");
+        const wordHistory = document.getElementById("wordHistory");
+
+        targetWordDisplay.textContent = wordList[currentIndex];
+
+        function checkWord() {
+            const typed = typingInput.value.trim().toLowerCase();
+            const currentWord = wordList[currentIndex].toLowerCase();
+            const isCorrect = typed === currentWord;
+
+            feedback.textContent = isCorrect
+                ? `✔ Correct! You typed "${typed}"`
+                : `✘ Incorrect. You typed "${typed}"`;
+            feedback.className = isCorrect ? "result correct" : "result incorrect";
+
+            const li = document.createElement("li");
+            li.textContent = `${wordList[currentIndex]}: ${typed}`;
+            li.className = isCorrect ? "correct" : "incorrect";
+            wordHistory.appendChild(li);
+
+            if (isCorrect) {
+                currentIndex++;
+                if (currentIndex < wordList.length) {
+                    targetWordDisplay.textContent = wordList[currentIndex];
+                } else {
+                    targetWordDisplay.textContent = "✓ Test complete!";
+                    typingInput.disabled = true;
+                    checkButton.disabled = true;
+                }
+            }
+
+            typingInput.value = "";
+            typingInput.focus();
+        }
+
+        // Button click
+        checkButton.addEventListener("click", checkWord);
+
+        // Press Enter
+        typingInput.addEventListener("keydown", function(e) {
+            if (e.key === "Enter") {
+                checkWord();
+            }
+        });
+    </script>
+</body>
+</html>
