@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #0099ff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+section {
+    margin-top: 50px;
+    background-color: #03030365;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 10px;
+}
+
+
+#hero {
+    background-image: linear-gradient(to bottom, #333, #fff);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    transition: background-position 0.5s ease-out;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#hero button {
+    background-color: #292828;
+    color: #fffbfb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background-color: #444;
+}
+
+#about p{
+    color: #fff;
+}
+
+#about h2{
+    color: orange;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#about img {
+    width: 300px;
+    height: 350px;
+    border-radius: 60%;
+    margin-bottom: 20px;
+}
+
+#hobbies{
+    color: orange;
+    font-size: 1.2em;
+}
+
+#hobbies ul, #interests ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#interests{
+    color: orange;
+    font-size: 1.2em;
+}
+#hobbies li, #interests li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#career-goals {
+    color: orange;
+    font-size: 1.3em;
+}
+
+#career-goals p{
+    color: #fff;
+    font-size: 1em;
+}
+#contact h2{
+    color: orange;
+    font-size: 1.5em;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+#contact li {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#contact i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    main {
+        flex-direction: column;
+    }
+    section {
+        margin-bottom: 10px;
+    }
+    #hero {
+        background-image: none;
+    }
+    #about {
+        flex-direction: column;
+    }
+    #about img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-right: 0;
+    }
+    main {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    #hero button {
+        font-size: 14px;
+    }
+    #about img {
+        width: 30px;
+        height: 30px;
+    }
+}
