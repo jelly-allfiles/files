@@ -1,0 +1,1005 @@
+*{
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   
+}
+ body{
+    width: 100%;
+    background-image: url('image/back.png');
+    background-size: cover;
+  
+ }
+ 
+ .logo img{
+    float: left;
+    width: 90px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: 40px;
+    z-index: 1000;  
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+ 
+ .head{
+    padding-top: 50px;
+    margin-left: 20px;
+    color: white;
+ }
+ .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 40%;
+ }
+ .header a{
+  text-decoration: none;
+  color: white;
+ }
+ 
+ nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(14, 7, 80, 0.425);
+ }
+ nav ul li a{
+   float: right;
+   text-decoration: none;
+   color:white;
+   margin-right: 90px;
+   margin-top: 70px;
+   font-size: 1rem;
+}
+
+nav ul li {
+   list-style: none;
+}
+ .content{
+   justify-content: center;
+   padding-left: 120px;
+   color:white;
+   font-size: 3.5rem;
+   padding-top: 300px;
+ 
+ }
+ .p1{
+ 
+   padding-left: 100px;
+   color:white;
+   font-style: italic;
+   font-size: 1.5rem;
+   
+ }
+ .p2{
+    padding-left: 150px;
+    font-style: arial;
+    
+ }
+ button{
+     width: 160px;
+     height: 40px;
+     font-size: 25px;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: .4s ease;
+     background-color: skyblue;
+     color: black;
+     
+ 
+ }
+ nav ul li a{
+    text-indent: -20px;
+ }
+ .p2 button a{
+    text-decoration: none;
+    color: white;
+ }
+ button:hover{
+   
+    cursor: pointer;
+ }
+ 
+ .h11{
+    color: skyblue;
+ }
+ .head a:hover{
+    cursor: pointer;
+    color: blue;
+ }
+ nav ul li a:hover{
+    color: blue;
+      
+    cursor: pointer;
+ 
+ }
+
+ .aboutp{
+  text-indent:50px;
+  font-size: 1.3em;
+  color: white;
+  font-style: arial;
+}
+ footer{
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(10, 10, 10, 0.425);
+    text-align: center;
+    margin-top: 50px;
+ }
+ .luzonn{
+   color: white;
+   padding-left: 100px;
+ }
+ .luzimg1 {
+   width: 500px;
+   height: 300px;
+   justify-content: center;
+   padding-left: 400px;
+   justify-items: center;
+ }
+ .h21{
+   padding-left: 550px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+
+ }
+ 
+ .lp1{
+   padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+  font-size: 1.5em;
+  
+ }
+ .luzimg2   {
+   width: 500px;
+   height: 300px;
+   justify-content: center; 
+   padding-left: 400px;
+   justify-items: center;
+ }
+ .h22{
+  padding-left: 530px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .lp2{
+  padding-left: 250px;  
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .luzimg3{
+   width: 500px;
+   height: 300px;
+   justify-content: center;
+   padding-left: 400px;
+   justify-items: center;
+ }
+ .h23{
+  padding-left: 600px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .lp3{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .luzimg4  {
+   width: 500px;
+   height: 300px;
+   justify-content: center;
+   padding-left: 400px;
+   justify-items: center;
+ }
+ .h24{
+  padding-left: 530px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .lp4{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .luzimg5   {
+   width: 500px;
+   justify-content: center;
+   padding-left: 400px;
+   justify-items: center;
+   height: 300px;
+ }
+ .h25{
+  padding-left: 590px;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+
+ }
+ .lp5{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .luzimg6   {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h26{
+  padding-left: 550px;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+ }
+ .lp6{
+   padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .luzimg7   {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h27{
+   padding-left: 470px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .lp7{
+   padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }.luzimg8   {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h28{
+   padding-left: 510px;   
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .lp8{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+
+ }
+ .luzimg9{
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h29{
+   padding-left: 530px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .lp9{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .luzimg10{
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h210{
+   padding-left: 510px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .lp10{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ .visimg1  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v1{
+   padding-left: 490px;
+   justify-content: center;
+   color: white;
+   justify-items: center;
+   font-size: 30px;
+ }
+ .v1{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+   
+ }
+ .visimg2  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+
+ }
+ .h2v2{
+   padding-left: 477px;
+   justify-content: center;
+   font-size: 30px;
+   color: white;
+ }
+ .v2{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ .visimg3  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v3{
+   padding-left: 530px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .v3{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .visimg4   {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v4{
+   padding-left: 530px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .v4{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .visimg5  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v5{
+   padding-left: 550px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .v5{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .visimg6  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v6{
+   padding-left: 530px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .v6{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ .visimg7  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v7{
+   padding-left: 520px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .v7{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ .visimg8  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v8{
+  font-size: 30px;
+   padding-left: 510px;
+   justify-content: center;
+   color: white;
+ }
+ .v8{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em; 
+ }
+ .visimg9  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v9{
+  font-size: 30px;  
+   padding-left: 485px;
+   justify-content: center;
+   color: white;
+ }
+ .v9{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ .visimg10  {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2v10{
+  font-size: 30px;
+   padding-left: 500px;
+   justify-content: center;
+   color: white;
+ }
+ .v10{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .minimg1{
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m1{
+  font-size: 30px;
+   padding-left: 550px;
+   justify-content: center;
+   color: white;
+ }
+ .m1{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ 
+ .minimg2 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m2{
+  font-size: 30px;
+   padding-left: 550px;
+   justify-content: center;
+   color: white;
+ }
+ .m2{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ 
+ .minimg3 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m3{
+  font-size: 30px;
+   padding-left: 520px;
+   justify-content: center;
+   color: white;
+ }
+ .m3{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ 
+ .minimg4 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m4{
+   padding-left: 570px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .m4{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ 
+ .minimg5 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m5{
+  font-size: 30px;  
+   padding-left: 590px;
+   justify-content: center;
+   color: white;
+ }
+ .m5{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ 
+ .minimg6 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m6{
+   padding-left: 500px;
+   justify-content: center;
+   color: white;
+   font-size: 30px; 
+ }
+ .m6{
+  padding-left: 250px; 
+  text-indent: 20px;
+  color: white;
+  font-size: 1.5em;
+ }
+ 
+ 
+ .minimg7 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m7{
+  font-size: 30px;
+   padding-left: 550px;
+   justify-content: center;
+   color: white;
+ }
+ .m7{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ 
+ 
+ .minimg8 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m8{
+  font-size: 30px;
+   padding-left: 550px;
+   justify-content: center;
+   color: white;
+ }
+ .m8{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ 
+ .minimg9 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m9{
+  font-size: 30px;
+   padding-left: 580px;
+   justify-content: center;
+   color: white;
+ }
+ .m9{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .minimg10 {
+  width: 500px;
+  justify-content: center;
+  padding-left: 400px;
+  justify-items: center;
+  height: 300px;
+ }
+ .h2m10{
+   padding-left: 580px;
+   justify-content: center;
+   color: white;
+   font-size: 30px;
+ }
+ .m10{
+  padding-left: 250px; 
+   text-indent: 20px;
+   color: white;
+   font-size: 1.5em;
+ }
+ .visimg1:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg2:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg3:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg4:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg5:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg6:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg7:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg8:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg9:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .visimg10:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg1:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg2:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg3:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg4:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg5:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg6:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg7:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg8:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg9:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .luzimg10:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg1:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg2:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg3:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg4:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg5:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg6:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg7:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg8:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg9:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ .minimg10:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+ 
+ .fb{
+  width: 40px;
+  height: 40px;
+ }
+ .ig{
+  width: 40px;
+  height: 40px;
+ }
+ .twitter{
+  width: 40px;
+  height: 40px;
+ }
+ .snapchat{
+  width: 40px;
+  height: 40px;
+ }
+ 
+ .aboutus p{
+  font-size: 1.5rem;
+ color: white;
+ outline-style: none;
+ text-indent: 20px;
+ 
+}
+
+.logo1{
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: white;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+  color: wheat;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contactus{
+  padding: 1%;
+  color: white;
+  outline-style: none;
+  font-size: 2rem;
+}
+.contact a{
+  color: skyblue;      
+}
+.contact a:hover{
+   color: skyblue;
+}
+.contact{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.faqs {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.faqs h2 {
+  color: #fff;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  color: aqua;
+  font-size: 1.5em;
+}
+
+.faq-item p {
+  margin-top: 5px;
+  color: #f7f7f7;
+  font-size: 1.5em;
+}
+.phil {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.services, .service-form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
+.services h2, .service-form h2 {
+  color: white;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
